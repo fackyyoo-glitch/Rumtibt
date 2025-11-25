@@ -1,0 +1,60 @@
+body {
+  overflow-x: hidden;
+}
+
+.head {
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.head__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.head__link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: 200px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: orange;
+}
+
+.head__button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background: rgb(4, 94, 4);
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
+}
+
+.head__button:hover {
+  background-color: white;
+  color: rgb(4, 94, 4);
+  border: solid 2px rgb(4, 94, 4);
+}
+
+.reg__container {
+  margin-top: 250px;
+}
+
+.reg__text {
+  font-size: 50px;
+  color: white;
+}
