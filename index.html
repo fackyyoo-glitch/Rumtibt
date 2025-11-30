@@ -37,7 +37,41 @@
           Насладись прогулкой в горах <br />
           с командой единомышлеников
         </p>
-        <div class="reg__field"></div>
+        <div class="reg__field">
+          <form method="post" id="tourReg" action="#" class="form__tour">
+            <div class="reg__button">
+              <label for="location">Выберите локацию для тура</label>
+              <select id="country" name="country">
+                <option value=""></option>
+                <option value="Russia">Россия</option>
+                <option value="Georgia">Грузия</option>
+                <option value="Armenia">Армения</option>
+              </select>
+            </div>
+            <div class="reg__date">
+              <label for="dateFirst">От</label>
+              <input type="date" id="dateFirst" name="dateFirst" />
+
+              <label for="dateSecond">До</label>
+              <input type="date" id="dateSecond" name="dateSecond" />
+              <span class="reg__discription">Укажите диапазон</span>
+            </div>
+            <div class="reg__button">
+              <label for="people">Введите количество людей</label>
+              <input
+                type="number"
+                minlength="4"
+                maxlength="20"
+                id="people"
+                name="people"
+              />
+              <span class="reg__discription">Минимум 4 человека</span>
+            </div>
+            <button type="submit" class="search__button">
+              Найти программу
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

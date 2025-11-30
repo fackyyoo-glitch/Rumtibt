@@ -1,23 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Triodion&display=swap");
+
 body {
   overflow-x: hidden;
+  font-family: "Triodion", system-ui;
+}
+
+.triodion-regular {
+  font-family: "Triodion", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .head {
   background-image: url(/img/background.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 120%;
+  height: 1000px;
 }
 
 .head__container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -50px;
+  margin-left: 100px;
+  padding-top: 30px;
 }
 
 .head__link {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 25px;
   margin-left: 200px;
   font-size: 20px;
@@ -38,7 +50,7 @@ body {
   width: 150px;
   height: 50px;
   color: white;
-  background: rgb(4, 94, 4);
+  background: rgb(4, 112, 131);
   border-radius: 12px;
   border: none;
   transition: 0.3s;
@@ -46,8 +58,8 @@ body {
 
 .head__button:hover {
   background-color: white;
-  color: rgb(4, 94, 4);
-  border: solid 2px rgb(4, 94, 4);
+  color: rgb(4, 112, 131);
+  border: solid 2px rgb(4, 112, 131);
 }
 
 .reg__container {
@@ -55,6 +67,83 @@ body {
 }
 
 .reg__text {
-  font-size: 50px;
+  display: flex;
+  font-size: 70px;
   color: white;
+  margin-left: 120px;
+  font-family: "Triodion", system-ui;
+}
+
+.reg__field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px auto;
+  background-color: rgba(104, 101, 101, 0.7);
+  border-radius: 12px;
+  width: 1200px;
+}
+
+.form__tour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.reg__button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reg__discription {
+  color: white;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: none;
+  color: white;
+}
+
+option {
+  color: black;
+  border-radius: 8px;
+  font-family: "Triodion", system-ui;
+  font-size: 20px;
+}
+
+option:hover {
+  background-color: rgb(4, 112, 131);
+}
+
+label {
+  color: white;
+}
+
+.search__button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background: rgb(4, 112, 131);
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
+}
+
+.search__button:hover {
+  background-color: white;
+  color: rgb(4, 112, 131);
+  border: solid 2px rgb(4, 112, 131);
+  width: 160px;
 }
