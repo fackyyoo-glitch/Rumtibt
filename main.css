@@ -201,3 +201,106 @@ label {
   font-size: 24px;
   top: 60px;
 }
+
+.block__second {
+  margin-bottom: 100px;
+}
+
+.block__third {
+  background-color: #f3f5f4;
+  padding-left: 120px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+
+.third__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  gap: 30px;
+}
+
+.third__list li {
+  padding-left: 40px;
+  position: relative;
+  margin: 15px 0;
+  min-height: 30px;
+  padding-left: 80px;
+  background-color: #f3f5f4;
+}
+
+/* Базовый стиль для всех иконок */
+.third__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.Gid {
+  background-image: url(/img/Gid.jpg);
+  background-repeat: no-repeat;
+}
+
+.Save {
+  background-image: url(/img/Save.jpg);
+  background-repeat: no-repeat;
+}
+
+.Price {
+  background-image: url(/img/Price.jpg);
+  background-repeat: no-repeat;
+}
+
+.third__main {
+  width: 580px;
+  height: 591px;
+}
+
+.third__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: -120px;
+  column-gap: 10px;
+}
+
+.img__grid {
+  width: 250;
+  height: 250;
+}
+
+.topleft {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.topright {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.bottomleft {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.bottomright {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
