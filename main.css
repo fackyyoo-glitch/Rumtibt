@@ -183,6 +183,12 @@ label {
   display: none;
 }
 
+.swap {
+  position: absolute;
+  left: 850px;
+  cursor: pointer;
+}
+
 .text__second {
   display: flex;
   flex-wrap: wrap;
