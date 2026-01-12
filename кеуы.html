@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .icon-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .icon-list li {
+        padding-left: 40px;
+        position: relative;
+        margin: 15px 0;
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      /* Базовый стиль для всех иконок */
+      .icon-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      /* ОСОБЕННЫЕ иконки через классы */
+      .icon-home::before {
+        background-image: url("https://cdn-icons-png.flaticon.com/512/25/25694.png");
+      }
+
+      .icon-email::before {
+        background-image: url("https://cdn-icons-png.flaticon.com/512/732/732200.png");
+      }
+
+      .icon-phone::before {
+        background-image: url("https://cdn-icons-png.flaticon.com/512/126/126341.png");
+      }
+
+      .icon-map::before {
+        background-image: url("https://cdn-icons-png.flaticon.com/512/684/684908.png");
+      }
+
+      .icon-clock::before {
+        background-image: url("https://cdn-icons-png.flaticon.com/512/2088/2088617.png");
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="icon-list">
+      <li class="icon-home">Адрес: ул. Примерная, 123</li>
+      <li class="icon-email">Email: hello@example.com</li>
+      <li class="icon-phone">Телефон: +7 (999) 123-45-67</li>
+      <li class="icon-map">Режим работы: Пн-Пт 9:00-18:00</li>
+      <li class="icon-clock">Мы на карте: г. Москва</li>
+    </ul>
+  </body>
+</html>
